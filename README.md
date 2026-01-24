@@ -28,6 +28,7 @@ A comprehensive, curated, and community-driven list of software houses and IT co
 | **Arbisoft** | [Visit](https://arbisoft.com) | [LinkedIn](https://www.linkedin.com/company/arbisoft/) | Web, Mobile & EdTech |
 | **10Pearls** | [Visit](https://10pearls.com) | [LinkedIn](https://www.linkedin.com/company/10pearls/) | AI & Product Development |
 | **Devsinc** | [Visit](https://devsinc.com) | [LinkedIn](https://www.linkedin.com/company/developers-inc/) | Full-stack & Staff Augmentation |
+| **Confiz** | [Visit](https://confiz.com) | [LinkedIn](https://www.linkedin.com/company/confiz/) | Cloud & Retail Tech |
 
 > **Tip:** Do you work at a software house in Lahore? [Add your company to the list](https://github.com/smhnaqvi/lahore-software-houses/blob/main/CONTRIBUTING.md).
 
