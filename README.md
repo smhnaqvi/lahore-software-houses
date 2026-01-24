@@ -26,6 +26,7 @@ A comprehensive, curated, and community-driven list of software houses and IT co
 | **Systems Limited** | [Visit](https://www.systemsltd.com) | [LinkedIn](https://www.linkedin.com/company/systems-limited/) | Digital Transformation & Cloud |
 | **NetSol Technologies** | [Visit](https://www.netsoltech.com) | [LinkedIn](https://www.linkedin.com/company/netsol-technologies-inc-/) | Fintech & Asset Finance |
 | **Arbisoft** | [Visit](https://arbisoft.com) | [LinkedIn](https://www.linkedin.com/company/arbisoft/) | Web, Mobile & EdTech |
+| **10Pearls** | [Visit](https://10pearls.com) | [LinkedIn](https://www.linkedin.com/company/10pearls/) | AI & Product Development |
 
 > **Tip:** Do you work at a software house in Lahore? [Add your company to the list](https://github.com/smhnaqvi/lahore-software-houses/blob/main/CONTRIBUTING.md).
 
