@@ -1,0 +1,54 @@
+name: "🏢 Add a New Company"
+description: "Suggest a software house to be added to the list"
+title: "[Company]: "
+labels: ["enhancement", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us complete the Lahore Software Houses directory! Please fill out the details below.
+  - type: input
+    id: company_name
+    attributes:
+      label: "Company Name"
+      placeholder: "e.g., Arbisoft"
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: "Official Website"
+      placeholder: "https://www.example.com"
+    validations:
+      required: true
+  - type: input
+    id: linkedin
+    attributes:
+      label: "LinkedIn Profile URL"
+      placeholder: "https://www.linkedin.com/company/example"
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Main Focus / Category"
+      options:
+        - "Web Development"
+        - "Mobile Apps"
+        - "AI / Data Science"
+        - "Fintech"
+        - "HealthTech"
+        - "Game Development"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: "Additional Details"
+      placeholder: "Location (e.g., Gulberg), Hiring status, or any other notes."
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: "Verification"
+      options:
+        - label: "I have checked that this company is not already on the list."
+          required: true
