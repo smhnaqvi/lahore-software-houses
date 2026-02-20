@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { getCompanies } from '../../../lib/companies';
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export function generateStaticParams() {
@@ -11,9 +11,18 @@ export function generateStaticParams() {
   return companies.map((company) => ({ slug: company.id }));
 }
 
-export function generateMetadata({ params }: Props) {
+function toHostLabel(url: string) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return 'N/A';
+  }
+}
+
+export async function generateMetadata({ params }: Props) {
+  const { slug } = await params;
   const companies = getCompanies();
-  const company = companies.find((c) => c.id === params.slug);
+  const company = companies.find((c) => c.id === slug);
 
   if (!company) {
     return {
@@ -27,9 +36,10 @@ export function generateMetadata({ params }: Props) {
   };
 }
 
-export default function CompanyPage({ params }: Props) {
+export default async function CompanyPage({ params }: Props) {
+  const { slug } = await params;
   const companies = getCompanies();
-  const company = companies.find((c) => c.id === params.slug);
+  const company = companies.find((c) => c.id === slug);
 
   if (!company) {
     notFound();
@@ -58,14 +68,9 @@ export default function CompanyPage({ params }: Props) {
           </h2>
           <div className="flex flex-wrap gap-2">
             {company.websiteUrl ? (
-              <a
-                href={company.websiteUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-1 rounded-full bg-slate-800 px-4 py-2 text-xs font-medium text-teal-300 hover:bg-slate-700"
-              >
-                Visit website
-              </a>
+              <span className="inline-flex items-center gap-1 rounded-full bg-slate-800 px-4 py-2 text-xs font-medium text-teal-300">
+                Website: {toHostLabel(company.websiteUrl)}
+              </span>
             ) : null}
             {company.linkedInUrl ? (
               <a

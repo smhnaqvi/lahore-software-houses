@@ -3,6 +3,14 @@ import { getCompanies } from '../lib/companies';
 
 export const dynamic = 'error';
 
+function toHostLabel(url: string) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return 'N/A';
+  }
+}
+
 export default function HomePage() {
   const companies = getCompanies();
 
@@ -68,14 +76,9 @@ export default function HomePage() {
 
                   <div className="flex flex-wrap items-center gap-2 text-xs text-slate-300">
                     {company.websiteUrl ? (
-                      <a
-                        href={company.websiteUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-1 rounded-full bg-slate-800 px-3 py-1 text-xs font-medium text-teal-300 hover:bg-slate-700"
-                      >
-                        Website
-                      </a>
+                      <span className="inline-flex items-center gap-1 rounded-full bg-slate-800 px-3 py-1 text-xs font-medium text-teal-300">
+                        {toHostLabel(company.websiteUrl)}
+                      </span>
                     ) : (
                       <span className="rounded-full bg-slate-900 px-3 py-1 text-xs text-slate-500">
                         —
@@ -91,7 +94,7 @@ export default function HomePage() {
                         rel="noreferrer"
                         className="inline-flex items-center gap-1 rounded-full bg-slate-800 px-3 py-1 text-xs font-medium text-slate-200 hover:bg-slate-700"
                       >
-                        LinkedIn
+                        LinkedIn profile
                       </a>
                     ) : (
                       <span className="rounded-full bg-slate-900 px-3 py-1 text-xs text-slate-500">
