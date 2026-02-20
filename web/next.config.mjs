@@ -5,6 +5,7 @@ const nextConfig = {
    * We use static export so that GitHub Pages can serve the site.
    */
   output: 'export',
+  trailingSlash: true,
   /**
    * When deployed under a repository subpath on GitHub Pages, we need
    * a basePath and assetPrefix. In development we keep them empty so
