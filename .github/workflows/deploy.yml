@@ -40,7 +40,7 @@ jobs:
 
       - name: Build
         working-directory: web
-        run: yarn build && yarn export
+        run: yarn build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
