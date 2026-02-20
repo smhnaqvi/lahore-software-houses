@@ -25,6 +25,13 @@ We are currently mapping all software houses in **Johar Town**. If you know any,
 
 ## 🏛 Top Software Houses
 
+> This table is the **single source of truth** for the website at `web/`.  
+> Each row represents one company and has this exact format:  
+> `| Company Name | Website | LinkedIn | Focus Area |`  
+> - **Order matters**: rows higher in the table appear first on the website.  
+> - Use `Visit` and `LinkedIn` labels like in the examples below.  
+> - All URLs must start with `https://`.
+
 | Company Name | Website | LinkedIn | Focus Area |
 | :--- | :--- | :--- | :--- |
 | **Systems Limited** | [Visit](https://www.systemsltd.com) | [LinkedIn](https://www.linkedin.com/company/systems-limited/) | Digital Transformation & Cloud |
@@ -45,6 +52,9 @@ We want this list to be the most accurate resource for Lahore's tech scene!
 1. Read the [CONTRIBUTING.md](https://github.com/smhnaqvi/lahore-software-houses/blob/main/CONTRIBUTING.md) guide.
 2. Fork this repo and add new entries.
 3. If you're not comfortable with Git, just [Open an Issue](https://github.com/smhnaqvi/lahore-software-houses/issues/new) and provide the company details!
+
+> The public website at `https://smhnaqvi.github.io/lahore-software-houses/` is built from this repository using Next.js.  
+> The list of companies on the site is generated **directly** from the `Top Software Houses` table above during build time.
 
 ---
 

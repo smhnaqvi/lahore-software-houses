@@ -10,7 +10,8 @@ There are many ways to contribute, from adding new companies to fixing broken li
 If you know a software house that isn't on the list:
 * Ensure the company is physically located or has a major office in **Lahore**.
 * Check if the company is already listed to avoid duplicates.
-* Add the company to the appropriate table in **alphabetical order**.
+* Add the company as a new row to the **Top Software Houses** table in `README.md`.
+* Keep the existing **row order** unless you intentionally want to move a company up/down the list (order controls priority on the website).
 * Please provide as much information as possible (Website, LinkedIn, etc.).
 
 ### 2. Updating Existing Information
@@ -29,7 +30,8 @@ If you have ideas on how to make this list better (e.g., better categorization, 
 
 ## ✅ Contribution Guidelines
 * **Quality over Quantity:** Please only add legitimate software houses or IT-related firms.
-* **Format:** Stick to the Markdown table format used in the `README.md`.
+* **Format:** Stick to the Markdown table format used in the `README.md` (**Company Name | Website | LinkedIn | Focus Area**). Use `Visit` / `LinkedIn` labels for the links, like the existing rows.
+* **Static website:** A static website (Next.js + GitHub Pages) is generated from this table. Any change you make here will appear on the site after it is built and deployed.
 * **Links:** Ensure all URLs start with `https://`.
 
 ## 🌟 Recognition
