@@ -79,7 +79,6 @@ export function parseCompaniesFromReadme(readmeContent: string): Company[] {
     let uniqueSlug = slug;
     let counter = 2;
     // Ensure slugs are unique
-    // eslint-disable-next-line no-constant-condition
     while (companies.some((c) => c.id === uniqueSlug)) {
       uniqueSlug = `${slug}-${counter}`;
       counter += 1;
