@@ -6,10 +6,14 @@
 
 A comprehensive, curated, and community-driven list of software houses and IT companies in Lahore, Pakistan. This resource is designed to help developers, designers, and tech professionals navigate the local job market and discover new opportunities.
 
+### 🚀 Current Focus
+We are currently mapping all software houses in **Johar Town**. If you know any, please contribute to this [Issue #9](https://github.com/smhnaqvi/lahore-software-houses/issues/9).
+
 ---
 
 ## 📌 Table of Contents
 - [🚀 Lahore Software Houses Directory](#-lahore-software-houses-directory)
+    - [🚀 Current Focus](#-current-focus)
   - [📌 Table of Contents](#-table-of-contents)
   - [🏛 Top Software Houses](#-top-software-houses)
   - [🤝 How to Contribute](#-how-to-contribute)
