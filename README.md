@@ -42,6 +42,7 @@ We are currently mapping all software houses in **Johar Town**. If you know any,
 | **Confiz** | [Visit](https://confiz.com) | [LinkedIn](https://www.linkedin.com/company/confiz/) | Cloud & Retail Tech |
 | **Tkxel** | [Visit](https://tkxel.com) | [LinkedIn](https://www.linkedin.com/company/tkxel/) | Custom Software & UI/UX |
 | **YODO** | [Visit](https://yododesigns.com/) | [LinkedIn](https://www.linkedin.com/company/yodogroup/) | AI-powered UI/UX for B2B Websites |
+| **The Digi Tech Resource Group** | [Visit](https://www.tdtrg.com/) | [LinkedIn](https://www.linkedin.com/company/drg-digitech-resource-group) | Web Design, Development & Digital Marketing |
 
 
 > **Tip:** Do you work at a software house in Lahore? [Add your company to the list](https://github.com/smhnaqvi/lahore-software-houses/blob/main/CONTRIBUTING.md).
